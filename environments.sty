@@ -1,0 +1,11 @@
+\ProvidesPackage{environments}
+
+% Объявление теорем в обычном шрифте
+\theoremstyle{definition}
+\newtheorem{innercustomthm}{№}
+\newenvironment{task}[1]
+  {\renewcommand\theinnercustomthm{#1}\innercustomthm}
+  {\endinnercustomthm}
+
+\theoremstyle{plain}
+\newtheorem{lemma}{Лемма}

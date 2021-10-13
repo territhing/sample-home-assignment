@@ -1,0 +1,62 @@
+\ProvidesPackage{commands}
+
+% Операторы
+\DeclareMathOperator{\dom}{dom}
+\DeclareMathOperator{\range}{range}
+\DeclareMathOperator{\pr}{pr}
+\newcommand{\inc}{{++}}
+\DeclareMathOperator{\bydef}{\overset{\operatorname{def}}{=}}
+
+% Обозначения множеств разных чисел
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\C}{\mathbb{C}}
+\newcommand{\A}{\mathbb{A}}
+
+% Калиграфические буквы
+\renewcommand{\AA}{\mathcal{A}}
+\newcommand{\BB}{\mathcal{B}}
+\newcommand{\CC}{\mathcal{C}}
+\newcommand{\FF}{\mathcal{F}}
+\newcommand{\GG}{\mathcal{G}}
+\newcommand{\MM}{\mathcal{M}}
+\newcommand{\NN}{\mathcal{N}}
+\newcommand{\LL}{\mathcal{L}}
+\newcommand{\OO}{\mathcal{O}}
+\newcommand{\RR}{\mathcal{R}}
+\newcommand{\QQ}{\mathcal{Q}}
+\newcommand{\TT}{\mathcal{T}}
+\newcommand{\UU}{\mathcal{U}}
+\newcommand{\WW}{\mathcal{W}}
+
+% Операции над множествами
+\newcommand{\symsub}{\bigtriangleup}
+\renewcommand{\emptyset}{\varnothing}
+
+% Переопределение стиля символов
+\renewcommand{\phi}{\varphi}
+\renewcommand{\epsilon}{\varepsilon}
+
+% Fuck off hyperref
+\newcommand{\sectionbreak}{\phantomsection}
+
+% Теория вероятностей
+\newcommand{\indep}{\perp \!\!\! \perp}
+\renewcommand{\Pr}[1]{\ensuremath{\mathsf{P}\left[#1\right]}}
+\newcommand{\cov}[1]{\ensuremath{\operatorname{cov}\left( #1 \right)}}
+\newcommand{\Expectation}[1]{\ensuremath{\mathbb{E}\left[ #1 \right]}}
+\newcommand{\Dispersion}[1]{\ensuremath{\mathbb{D}\left[ #1 \right]}}
+\newcommand{\Indicator}[1]{\ensuremath{\mathbb{I}\left\{ #1 \right\}}}
+
+% Распределения
+\newcommand{\Geom}[1]{\ensuremath{\operatorname{Geom}\left( #1 \right)}}
+\newcommand{\Uniform}[1]{\ensuremath{\operatorname{Uniform}\left( #1 \right)}}
+\newcommand{\Expon}[1]{\ensuremath{\operatorname{Exp}\left( #1 \right)}}
+
+% Линал
+\newcommand{\Spec}{\ensuremath{\operatorname{Spec}}}
+\newcommand{\diag}{\ensuremath{\operatorname{diag}}}
+\newcommand{\rk}{\ensuremath{\operatorname{rk}}}
